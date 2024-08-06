@@ -1,14 +1,5 @@
 [
   {
-    "Name": "Addition",
-    "Id": 1,
-    "Ques": "Write a function to get sum of a given number.",
-    "Inputs": [[5, 3],[4,5]],
-    "Output": [8,9],
-    "Solution": "function factorial(n) {\n  if (n === 0) {\n    return 1;\n  }\n  return n * factorial(n - 1);\n}\n\nconsole.log(factorial(5)); // Output: 120",
-    "levels": "Intermediate"
-  },
-  {
     "Name": "Calculate Factorial",
     "Id": 4,
     "Ques": "Write a function to calculate the factorial of a given number.",

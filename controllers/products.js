@@ -7,7 +7,7 @@ require('dotenv').config()
 const displayQues = async (req, res) => {
   try {
     // Fetch all questions from the database
-    const questions = await Product.find({}, { Name: 1, _id: 0 });
+    const questions = await Product.find({}, { Name: 1, _id: 0, Id: 1 });
     // console.log(questions) // Assuming your model is named Product
     res.json(questions); // Send the list of questions as JSON response
   } catch (err) {

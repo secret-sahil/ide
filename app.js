@@ -13,11 +13,11 @@ const product_routes = require("./routes/products")
 app.use(cors()); // Enable CORS for all routes
 
 app.get('/', async (req, res) => {
-  res.send("Welcome to course api-- to render visit /api/products")
+  res.send("Welcome to IDE")
 })
 
 app.use(express.json());
-app.use("/api/products", product_routes)
+app.use("/api", product_routes)
 
 const PORT = process.env.PORT || 5000;
 
